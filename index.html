@@ -49,7 +49,7 @@
         font-size: 2.2em;
         font-weight: 700;
         margin: 0;
-        color: #fff; /* สีขาว */
+        color: #fff;
         letter-spacing: 0.06em;
         background: none;
         -webkit-background-clip: unset;
@@ -62,7 +62,7 @@
         justify-content: center;
         width: 100%;
         flex-wrap: wrap;
-        overflow: visible; /* เอา scroll ออก */
+        overflow: visible;
         padding-bottom: 0;
       }
 
@@ -76,6 +76,7 @@
         transition: transform 0.3s ease;
         flex-shrink: 0;
       }
+
       .qr-box:hover {
         transform: scale(1.05);
         box-shadow: 0 4px 20px rgba(255, 255, 255, 0.15);
@@ -90,7 +91,7 @@
       .qr-title {
         margin-top: 10px;
         font-size: 1em;
-        color: #fff; /* สีขาว */
+        color: #fff;
         font-weight: 500;
         letter-spacing: 0.04em;
       }
@@ -98,7 +99,7 @@
       .contact-box {
         margin-top: 30px;
         font-size: 0.9em;
-        color: #bfbcbc; /* สีขาว */
+        color: #bfbcbc;
         text-align: center;
         line-height: 1.6;
         user-select: none;
@@ -111,10 +112,11 @@
         color: inherit;
       }
 
+      /* Responsive for mobile */
       @media screen and (max-width: 600px) {
         .qr-container {
-          flex-wrap: wrap;
-          gap: 20px;
+          gap: 16px;
+          justify-content: center;
         }
         .header h1 {
           font-size: 1.6em;
@@ -124,11 +126,15 @@
         }
         .overlay {
           max-width: 100vw;
-          padding: 20px 20px 30px;
+          padding: 20px 16px 30px;
         }
         .qr-box {
-          width: 140px;
-          padding: 12px;
+          width: 130px;
+          padding: 10px;
+        }
+        .qr-box img {
+          width: 100%;
+          height: auto;
         }
         .qr-title {
           font-size: 0.9em;
